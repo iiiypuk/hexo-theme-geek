@@ -1,507 +1,400 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-body {
-    background-color: #2d3436;
-    color: #d2d2d2;
-    font-weight: 400;
-    font-size: 1rem;
-    font-family: 'Exo 2', sans-serif;
-    line-height: 1.725;
-    text-rendering: geometricPrecision;
-}
-
-a {
-    color: #d2d2d2;
-    text-decoration: none;
-}
-
+body
+    background-color #2d3436
+    color #d2d2d2
+    font-weight 400
+    font-size 1rem
+    font-family 'Exo 2', sans-serif
+    line-height 1.725
+    text-rendering geometricPrecision
+a
+    color #d2d2d2
+    text-decoration none
 a:focus,
-a:hover {
-    color: #0984e3;
-    text-decoration: underline;
-}
-
-
-footer {
-    text-align: center;
-    margin-top: 30px;
-    color: #ccc;
-}
-
-footer .el-switch-style {
-    opacity: 0.2;
-    transition: opacity 400ms;
-}
-
-footer .el-switch-style:hover {
-    opacity: 1;
-    transition: opacity 400ms;
-}
-
-footer i.fa-heart {
-    color: #ff7675;
-}
-
-.clear {
-    clear: both;
-}
-
-.navdiv {
-    width: 100%;
-}
-
-.hd {
-    width: 800px;
-    height: 100%;
-    margin: auto;
-}
-
-footer hr {
-    width: 800px;
-    margin: auto;
-}
-
+a:hover
+    color #0984e3
+    text-decoration underline
+footer
+    text-align center
+    margin-top 30px
+    color #ccc
+    .el-switch-style
+        opacity 0.2
+        transition opacity 400ms
+        &:hover
+            opacity 1
+            transition opacity 400ms
+    i
+        &.fa-heart
+            color #ff7675
+    hr
+        width 800px
+        margin auto
+.clear
+    clear both
+.navdiv
+    width 100%
+.hd
+    width 800px
+    height 100%
+    margin auto
 @import "_partial/index"
 @import "_partial/post"
 @import "_partial/markdown"
+.highlight table td, .highlight table th, .highlight table tr
+    border 0px
+    padding 0px
 
-.highlight table td, .highlight table th, .highlight table tr {
-    border: 0px;
-    padding: 0px;
-}
+.highlight
+    .code
+        width 100%
 
-.highlight .code {
-    width: 100%;
-}
-
-.bg_while {
-    background-color: #ffffff;
-    color: #51525d;
-}
-
+.bg_while
+    background-color #ffffff
+    color #51525d
 
 .el-radio,
-.el-checkbox {
-    position: relative;
-    font-size: 100%;
-}
+.el-checkbox
+    position relative
+    font-size 100%
 
 label.el-radio,
-label.el-checkbox {
-    display: block;
-    cursor: pointer;
-}
+label.el-checkbox
+    display block
+    cursor pointer
 
 .el-radio>input[type="radio"],
-.el-checkbox>input[type="checkbox"] {
-    display: none;
-}
+.el-checkbox>input[type="checkbox"]
+    display none
 
 .el-radio>input[type="radio"][disabled],
-.el-checkbox>input[type="checkbox"][disabled] {
-    cursor: not-allowed;
-}
+.el-checkbox>input[type="checkbox"][disabled]
+    cursor not-allowed
 
 .el-radio>input[type="radio"]+.el-radio-style,
-.el-checkbox>input[type="checkbox"]+.el-checkbox-style {
-    position: relative;
-    display: inline-block;
-    width: 1.4em;
-    height: 1.4em;
-    vertical-align: middle;
-    cursor: pointer;
-}
+.el-checkbox>input[type="checkbox"]+.el-checkbox-style
+    position relative
+    display inline-block
+    width 1.4em
+    height 1.4em
+    vertical-align middle
+    cursor pointer
 
 .el-radio>input[type="radio"]+.el-radio-style:hover:before,
-.el-checkbox>input[type="checkbox"]+.el-checkbox-style:hover:before {
-    border-color: #20a0ff;
-}
+.el-checkbox>input[type="checkbox"]+.el-checkbox-style:hover:before
+    border-color #20a0ff
 
 .el-radio>input[type="radio"]+.el-radio-style:before,
-.el-checkbox>input[type="checkbox"]+.el-checkbox-style:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    width: 1.4em;
-    height: 1.4em;
-    content: '';
-    border: 1px solid #C0CCDA;
-}
+.el-checkbox>input[type="checkbox"]+.el-checkbox-style:before
+    position absolute
+    top 0
+    left 0
+    display inline-block
+    width 1.4em
+    height 1.4em
+    content ''
+    border 1px solid #C0CCDA
 
 .el-radio>input[type="radio"]+.el-radio-style:after,
-.el-checkbox>input[type="checkbox"]+.el-checkbox-style:after {
-    position: absolute;
-    display: none;
-    content: '';
-}
+.el-checkbox>input[type="checkbox"]+.el-checkbox-style:after
+    position absolute
+    display none
+    content ''
 
 .el-radio>input[type="radio"][disabled]+.el-radio-style,
-.el-checkbox>input[type="checkbox"][disabled]+.el-checkbox-style {
-    cursor: not-allowed;
-    color: #D3DCE6;
-}
+.el-checkbox>input[type="checkbox"][disabled]+.el-checkbox-style
+    cursor not-allowed
+    color #D3DCE6
 
 .el-radio>input[type="radio"][disabled]+.el-radio-style:hover,
 .el-radio>input[type="radio"][disabled]+.el-radio-style:before,
 .el-radio>input[type="radio"][disabled]+.el-radio-style:after,
 .el-checkbox>input[type="checkbox"][disabled]+.el-checkbox-style:hover,
 .el-checkbox>input[type="checkbox"][disabled]+.el-checkbox-style:before,
-.el-checkbox>input[type="checkbox"][disabled]+.el-checkbox-style:after {
-    cursor: not-allowed;
-}
+.el-checkbox>input[type="checkbox"][disabled]+.el-checkbox-style:after
+    cursor not-allowed
 
 .el-radio>input[type="radio"][disabled]+.el-radio-style:hover:before,
-.el-checkbox>input[type="checkbox"][disabled]+.el-checkbox-style:hover:before {
-    border: 1px solid #D3DCE6;
-    animation-name: none;
-}
+.el-checkbox>input[type="checkbox"][disabled]+.el-checkbox-style:hover:before
+    border 1px solid #D3DCE6
+    animation-name none
 
 .el-radio>input[type="radio"][disabled]+.el-radio-style:before,
-.el-checkbox>input[type="checkbox"][disabled]+.el-checkbox-style:before {
-    border-color: #D3DCE6;
-}
+.el-checkbox>input[type="checkbox"][disabled]+.el-checkbox-style:before
+    border-color #D3DCE6
 
 .el-radio>input[type="radio"]:checked+.el-radio-style:before,
-.el-checkbox>input[type="checkbox"]:checked+.el-checkbox-style:before {
-    animation-name: none;
-}
+.el-checkbox>input[type="checkbox"]:checked+.el-checkbox-style:before
+    animation-name none
 
 .el-radio>input[type="radio"]:checked+.el-radio-style:after,
-.el-checkbox>input[type="checkbox"]:checked+.el-checkbox-style:after {
-    display: block;
-}
+.el-checkbox>input[type="checkbox"]:checked+.el-checkbox-style:after
+    display block
 
-.el-radio>input[type="radio"]+.el-radio-style:before {
-    border-radius: 50%;
-}
+.el-radio
+    & > input[type="radio"]
+        & + .el-radio-style
+            &:before
+                border-radius 50%
+            &:after
+                top 0.4em
+                left 0.4em
+                width 0.6em
+                height 0.6em
+                border-radius 50%
+                background #20a0ff
+    & > input[type="radio"]:checked
+        & + .el-radio-style
+            &:before
+                border 1px solid #20a0ff
+    & > input[type="radio"]:checked[disabled]
+        & + .el-radio-style
+            &:before
+                border 1px solid #b0d7f5
+            &:after
+                background #b0d7f5
 
-.el-radio>input[type="radio"]+.el-radio-style:after {
-    top: 0.4em;
-    left: 0.4em;
-    width: 0.6em;
-    height: 0.6em;
-    border-radius: 50%;
-    background: #20a0ff;
-}
+.el-checkbox
+    & > input[type="checkbox"]
+        & + .el-checkbox-style
+            &:before
+                border-radius 3px
+            &:after
+                top 0.15em
+                left 0.5em
+                box-sizing border-box
+                width 0.4em
+                height 0.85em
+                transform rotate(45deg)
+                border-right 2px solid #fff
+                border-bottom 2px solid #fff
+    & > input[type="checkbox"]:checked
+        & + .el-checkbox-style
+            &:before
+                border #20a0ff
+                background #20a0ff
+    & > input[type="checkbox"]:checked[disabled]
+        & + .el-checkbox-style
+            &:before
+                border #b0d7f5
+                background #b0d7f5
 
-.el-radio>input[type="radio"]:checked+.el-radio-style:before {
-    border: 1px solid #20a0ff;
-}
-
-.el-radio>input[type="radio"]:checked[disabled]+.el-radio-style:before {
-    border: 1px solid #b0d7f5;
-}
-
-.el-radio>input[type="radio"]:checked[disabled]+.el-radio-style:after {
-    background: #b0d7f5;
-}
-
-.el-checkbox>input[type="checkbox"]+.el-checkbox-style:before {
-    border-radius: 3px;
-}
-
-.el-checkbox>input[type="checkbox"]+.el-checkbox-style:after {
-    top: 0.15em;
-    left: 0.5em;
-    box-sizing: border-box;
-    width: 0.4em;
-    height: 0.85em;
-    transform: rotate(45deg);
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-}
-
-.el-checkbox>input[type="checkbox"]:checked+.el-checkbox-style:before {
-    border: #20a0ff;
-    background: #20a0ff;
-}
-
-.el-checkbox>input[type="checkbox"]:checked[disabled]+.el-checkbox-style:before {
-    border: #b0d7f5;
-    background: #b0d7f5;
-}
-
-/*blue theme*/
 .el-radio.el-radio-blue>input[type="radio"]+label:hover:before,
 .el-checkbox.el-checkbox-blue>input[type="checkbox"]+label:hover:before,
 .el-radio.el-radio-blue>input[type="radio"]:checked+label:before,
-.el-checkbox.el-checkbox-blue>input[type="checkbox"]:checked+label:before {
-    border-color: #20a0ff;
-}
+.el-checkbox.el-checkbox-blue>input[type="checkbox"]:checked+label:before
+    border-color #20a0ff
 
 .el-checkbox.el-checkbox-blue>input[type="checkbox"]:checked+label:before,
-.el-radio.el-radio-blue>input[type="radio"]+label:after {
-    background: #20a0ff;
-}
+.el-radio.el-radio-blue>input[type="radio"]+label:after
+    background #20a0ff
 
 .el-radio.el-radio-blue>input[type="radio"][disabled]+label:hover:before,
-.el-checkbox.el-checkbox-blue>input[type="checkbox"][disabled]+label:hover:before {
-    border-color: #D3DCE6;
-}
+.el-checkbox.el-checkbox-blue>input[type="checkbox"][disabled]+label:hover:before
+    border-color #D3DCE6
 
 .el-checkbox.el-checkbox-blue>input[type="checkbox"]:checked[disabled]+label:before,
-.el-radio.el-radio-blue>input[type="radio"]:checked[disabled]+label:before {
-    border-color: #b0d7f5;
-}
+.el-radio.el-radio-blue>input[type="radio"]:checked[disabled]+label:before
+    border-color #b0d7f5
 
 .el-checkbox.el-checkbox-blue>input[type="checkbox"][disabled]:checked+label:before,
-.el-radio.el-radio-blue>input[type="radio"]:checked[disabled]+label:after {
-    background: #b0d7f5;
-}
+.el-radio.el-radio-blue>input[type="radio"]:checked[disabled]+label:after
+    background #b0d7f5
 
-/*green theme*/
 .el-radio.el-radio-green>input[type="radio"]+label:hover:before,
 .el-checkbox.el-checkbox-green>input[type="checkbox"]+label:hover:before,
 .el-radio.el-radio-green>input[type="radio"]:checked+label:before,
-.el-checkbox.el-checkbox-green>input[type="checkbox"]:checked+label:before {
-    border-color: #13ce66;
-}
+.el-checkbox.el-checkbox-green>input[type="checkbox"]:checked+label:before
+    border-color #13ce66
 
 .el-checkbox.el-checkbox-green>input[type="checkbox"]:checked+label:before,
-.el-radio.el-radio-green>input[type="radio"]+label:after {
-    background: #13ce66;
-}
+.el-radio.el-radio-green>input[type="radio"]+label:after
+    background #13ce66
 
 .el-radio.el-radio-green>input[type="radio"][disabled]+label:hover:before,
-.el-checkbox.el-checkbox-green>input[type="checkbox"][disabled]+label:hover:before {
-    border-color: #D3DCE6;
-}
+.el-checkbox.el-checkbox-green>input[type="checkbox"][disabled]+label:hover:before
+    border-color #D3DCE6
 
 .el-checkbox.el-checkbox-green>input[type="checkbox"]:checked[disabled]+label:before,
-.el-radio.el-radio-green>input[type="radio"]:checked[disabled]+label:before {
-    border-color: #a1efc4;
-}
+.el-radio.el-radio-green>input[type="radio"]:checked[disabled]+label:before
+    border-color #a1efc4
 
 .el-checkbox.el-checkbox-green>input[type="checkbox"][disabled]:checked+label:before,
-.el-radio.el-radio-green>input[type="radio"]:checked[disabled]+label:after {
-    background: #a1efc4;
-}
+.el-radio.el-radio-green>input[type="radio"]:checked[disabled]+label:after
+    background #a1efc4
 
-/*red theme*/
 .el-radio.el-radio-red>input[type="radio"]+label:hover:before,
 .el-checkbox.el-checkbox-red>input[type="checkbox"]+label:hover:before,
 .el-radio.el-radio-red>input[type="radio"]:checked+label:before,
-.el-checkbox.el-checkbox-red>input[type="checkbox"]:checked+label:before {
-    border-color: #ff4949;
-}
+.el-checkbox.el-checkbox-red>input[type="checkbox"]:checked+label:before
+    border-color #ff4949
 
 .el-checkbox.el-checkbox-red>input[type="checkbox"]:checked+label:before,
-.el-radio.el-radio-red>input[type="radio"]+label:after {
-    background: #ff4949;
-}
+.el-radio.el-radio-red>input[type="radio"]+label:after
+    background #ff4949
 
 .el-radio.el-radio-red>input[type="radio"][disabled]+label:hover:before,
-.el-checkbox.el-checkbox-red>input[type="checkbox"][disabled]+label:hover:before {
-    border-color: #D3DCE6;
-}
+.el-checkbox.el-checkbox-red>input[type="checkbox"][disabled]+label:hover:before
+    border-color #D3DCE6
 
 .el-checkbox.el-checkbox-red>input[type="checkbox"]:checked[disabled]+label:before,
-.el-radio.el-radio-red>input[type="radio"]:checked[disabled]+label:before {
-    border-color: #f9b3b3;
-}
+.el-radio.el-radio-red>input[type="radio"]:checked[disabled]+label:before
+    border-color #f9b3b3
 
 .el-checkbox.el-checkbox-red>input[type="checkbox"][disabled]:checked+label:before,
-.el-radio.el-radio-red>input[type="radio"]:checked[disabled]+label:after {
-    background: #f9b3b3;
-}
+.el-radio.el-radio-red>input[type="radio"]:checked[disabled]+label:after
+    background #f9b3b3
 
-/*yellow theme*/
 .el-radio.el-radio-yellow>input[type="radio"]+label:hover:before,
 .el-checkbox.el-checkbox-yellow>input[type="checkbox"]+label:hover:before,
 .el-radio.el-radio-yellow>input[type="radio"]:checked+label:before,
-.el-checkbox.el-checkbox-yellow>input[type="checkbox"]:checked+label:before {
-    border-color: #f7ba2a;
-}
+.el-checkbox.el-checkbox-yellow>input[type="checkbox"]:checked+label:before
+    border-color #f7ba2a
 
 .el-checkbox.el-checkbox-yellow>input[type="checkbox"]:checked+label:before,
-.el-radio.el-radio-yellow>input[type="radio"]+label:after {
-    background: #f7ba2a;
-}
+.el-radio.el-radio-yellow>input[type="radio"]+label:after
+    background #f7ba2a
 
 .el-radio.el-radio-yellow>input[type="radio"][disabled]+label:hover:before,
-.el-checkbox.el-checkbox-yellow>input[type="checkbox"][disabled]+label:hover:before {
-    border-color: #D3DCE6;
-}
+.el-checkbox.el-checkbox-yellow>input[type="checkbox"][disabled]+label:hover:before
+    border-color #D3DCE6
 
 .el-checkbox.el-checkbox-yellow>input[type="checkbox"]:checked[disabled]+label:before,
-.el-radio.el-radio-yellow>input[type="radio"]:checked[disabled]+label:before {
-    border-color: #fbeac1;
-}
+.el-radio.el-radio-yellow>input[type="radio"]:checked[disabled]+label:before
+    border-color #fbeac1
 
 .el-checkbox.el-checkbox-yellow>input[type="checkbox"][disabled]:checked+label:before,
-.el-radio.el-radio-yellow>input[type="radio"]:checked[disabled]+label:after {
-    background: #fbeac1;
-}
+.el-radio.el-radio-yellow>input[type="radio"]:checked[disabled]+label:after
+    background #fbeac1
 
-/*switch component*/
 .el-switch,
 .el-switch-style,
-.el-switch-style:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+.el-switch-style:before
+    -webkit-box-sizing border-box
+    -moz-box-sizing border-box
+    box-sizing border-box
 
-.el-switch {
-    display: inline-block;
-    font-size: 100%;
-    height: 1.6em;
-    position: relative;
-}
+.el-switch
+    display inline-block
+    font-size 100%
+    height 1.6em
+    position relative
+    .el-switch-style
+        height 1.6em
+        left 0
+        background #c0ccda
+        -webkit-border-radius 0.8em
+        border-radius 0.8em
+        display inline-block
+        position relative
+        top 0
+        -webkit-transition all 0.3s ease-in-out
+        transition all 0.3s ease-in-out
+        width 3em
+        cursor pointer
+        &:before
+            display block
+            content ''
+            height 1.4em
+            position absolute
+            width 1.4em
+            background-color #ffffff
+            -webkit-border-radius 50%
+            border-radius 50%
+            left 0.1em
+            top 0.1em
+            -webkit-transition all 0.3s ease-in-out
+            transition all 0.3s ease-in-out
+    & > input[type="checkbox"]
+        display none
+    & > input[type="checkbox"][disabled]
+        & + .el-switch-style
+            cursor not-allowed
+            background-color #d3dce6
+    & > input[type="checkbox"]:checked
+        & + .el-switch-style
+            background-color #0984e3
+            &:before
+                left 50%
+    & > input[type="checkbox"]:checked[disabled]
+        & + .el-switch-style
+            background-color #74b9ff
+    &.el-switch-blue
+        & > input[type="checkbox"]:checked
+            & + .el-switch-style
+                background-color #0984e3
+        & > input[type="checkbox"]:checked[disabled]
+            & + .el-switch-style
+                background-color #74b9ff
+    &.el-switch-green
+        & > input[type="checkbox"]:checked
+            & + .el-switch-style
+                background-color #00b894
+        & > input[type="checkbox"]:checked[disabled]
+            & + .el-switch-style
+                background-color #55efc4
+    &.el-switch-red
+        & > input[type="checkbox"]:checked
+            & + .el-switch-style
+                background-color #d63031
+        & > input[type="checkbox"]:checked[disabled]
+            & + .el-switch-style
+                background-color #ff7675
+    &.el-switch-yellow
+        & > input[type="checkbox"]:checked
+            & + .el-switch-style
+                background-color #fdcb6e
+        & > input[type="checkbox"]:checked[disabled]
+            & + .el-switch-style
+                background-color #ffeaa7
 
-.el-switch .el-switch-style {
-    height: 1.6em;
-    left: 0;
-    background: #c0ccda;
-    -webkit-border-radius: 0.8em;
-    border-radius: 0.8em;
-    display: inline-block;
-    position: relative;
-    top: 0;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    width: 3em;
-    cursor: pointer;
-}
-
-.el-switch .el-switch-style:before {
-    display: block;
-    content: '';
-    height: 1.4em;
-    position: absolute;
-    width: 1.4em;
-    background-color: #ffffff;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    left: 0.1em;
-    top: 0.1em;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-.el-switch>input[type="checkbox"] {
-    display: none;
-}
-
-.el-switch>input[type="checkbox"][disabled]+.el-switch-style {
-    cursor: not-allowed;
-    background-color: #d3dce6;
-}
-
-.el-switch>input[type="checkbox"]:checked+.el-switch-style {
-    background-color: #0984e3;
-}
-
-.el-switch>input[type="checkbox"]:checked+.el-switch-style:before {
-    left: 50%;
-}
-
-.el-switch>input[type="checkbox"]:checked[disabled]+.el-switch-style {
-    background-color: #74b9ff;
-}
-
-.el-switch.el-switch-blue>input[type="checkbox"]:checked+.el-switch-style {
-    background-color: #0984e3;
-}
-
-.el-switch.el-switch-blue>input[type="checkbox"]:checked[disabled]+.el-switch-style {
-    background-color: #74b9ff;
-}
-
-.el-switch.el-switch-green>input[type="checkbox"]:checked+.el-switch-style {
-    background-color: #00b894;
-}
-
-.el-switch.el-switch-green>input[type="checkbox"]:checked[disabled]+.el-switch-style {
-    background-color: #55efc4;
-}
-
-.el-switch.el-switch-red>input[type="checkbox"]:checked+.el-switch-style {
-    background-color: #d63031;
-}
-
-.el-switch.el-switch-red>input[type="checkbox"]:checked[disabled]+.el-switch-style {
-    background-color: #ff7675;
-}
-
-.el-switch.el-switch-yellow>input[type="checkbox"]:checked+.el-switch-style {
-    background-color: #fdcb6e;
-}
-
-.el-switch.el-switch-yellow>input[type="checkbox"]:checked[disabled]+.el-switch-style {
-    background-color: #ffeaa7;
-}
-
-/*define size*/
 .el-radio.el-radio-sm,
 .el-checkbox.el-checkbox-sm,
-.el-switch.el-switch-sm {
-    font-size: 85%;
-}
+.el-switch.el-switch-sm
+    font-size 85%
 
 .el-radio.el-radio-lg,
 .el-checkbox.el-checkbox-lg,
-.el-switch.el-switch-lg {
-    font-size: 125%;
-}
+.el-switch.el-switch-lg
+    font-size 125%
 
-.breadcrumb {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    list-style: none;
-    border-radius: 4px;
-}
+.breadcrumb
+    font-size 1rem
+    margin-bottom 20px
+    list-style none
+    border-radius 4px
+    & > li
+        display inline-block
+        & + li
+            &:before
+                padding 0 5px
+                color #ccc
+                content ''
+    & > .active
+        color #777
 
-.breadcrumb>li {
-    display: inline-block;
-}
+.breadcrumbhr
+    margin-top -15px
+    margin-bottom -15px
 
-.breadcrumb>li+li:before {
-    padding: 0 5px;
-    color: #ccc;
-    content: '';
-}
+.vcomments
+    margin-top 20px
 
-.breadcrumb>.active {
-    color: #777;
-}
-
-.breadcrumbhr{
-    margin-top: -15px;
-    margin-bottom: -15px;
-}
-
-.vcomments{
-    margin-top: 20px;
-}
-
-@media screen and (max-width: 800px) {
-    .hd {
-        width: 90%;
-        margin: auto;
-    }
-
-    footer hr {
-        width: 90%;
-        margin: auto;
-    }
-
-    .posts .replay-btn{
-        display: none;
-    }
-
-    .posttime{
-        display: none;
-    }
-
-    .posts {
-        font-size: 16px;
-    }
-
-    .postname {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-}
+@media screen and (max-width: 800px)
+    .hd
+        width 90%
+        margin auto
+    footer
+        hr
+            width 90%
+            margin auto
+    .posts
+        font-size 16px
+        .replay-btn
+            display none
+    .posttime
+        display none
+    .postname
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
