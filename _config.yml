@@ -1,22 +1,20 @@
-logo_title: GEEK 三斤
+logo_title: geek & gamer
 
 style: black
 
 favicon: /favicon.ico
 
 menu:
-  作品: /project
-  域名: /domain
-  友联: /links
-  关于: /about
-  Github: https://github.com/sanjinhub
+  Archives: /archives
+  About: /about
+  Github: https://github.com/iiiypuk
 
 # 做了域名限制，请改成自己的 KEY
 # 若关闭valine 设置enable为false
 valine:
-  enable: true
-  appId: CmCti21ooOOIzFOhEyFkFvR0-gzGzoHsz
-  appKey: FqiyUqbg7McKN2eG0MCewupf
+  enable: false
+  appId:
+  appKey:
 
 highlight:
-  enable: false
+  enable: true
