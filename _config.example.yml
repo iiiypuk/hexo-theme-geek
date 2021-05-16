@@ -1,0 +1,15 @@
+logo_title: geek
+author: nobody # use in footer
+
+style: black
+
+favicon: /favicon.ico
+
+menu:
+  Archives: /archives
+  About: /about
+  Github: https://github.com/
+  Twitter: https://twitter.com/
+
+highlight:
+  enable: true
