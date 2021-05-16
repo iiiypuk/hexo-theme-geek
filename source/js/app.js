@@ -1,4 +1,6 @@
-var web_style = $("#web_style").val();
+'use strict';
+
+let web_style = $("#web_style").val();
 
 document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll('pre').forEach((block) => {
@@ -11,8 +13,8 @@ function setCookie(key, value) {
 }
 
 function getCookie(key) {
-    var data = localStorage.getItem(key);
-    return data
+    let data = localStorage.getItem(key);
+    return data;
 }
 
 function updateStyle() {
@@ -32,18 +34,19 @@ function updateStyle() {
 }
 
 if (getCookie("style") == null) {
-    setCookie("style", web_style)
+    setCookie("style", web_style);
     updateStyle();
 } else if (getCookie("style") == "white") {
-    setCookie("style", "white")
+    setCookie("style", "white");
     updateStyle();
 } else if (getCookie("style") == "black") {
-    setCookie("style", "black")
+    setCookie("style", "black");
     updateStyle();
 }
 
 $("#update_style").change(function() {
-    var style = $("#update_style").is(':checked');
+    let style = $("#update_style").is(':checked');
+    
     if (style) {
         setCookie("style", "black")
         updateStyle();
