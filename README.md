@@ -2,15 +2,7 @@
 
 ## 演示
 
-> 演示地址：https://geek.lc
-
-### 黑色风格
-
-![1.png](./imgs/1.png)
-
-### 白色风格
-
-![2.png](./imgs/2.png)
+> 演示地址：https://blog.iiiypuk.me
 
 ## 为什么要自己开发
 
@@ -29,7 +21,7 @@
 命令下执行：
 
 ```
- git clone https://github.com/sanjinhub/hexo-theme-geek.git geek 
+ git clone https://github.com/iiiypuk/hexo-theme-geek.git geek 
 ```
 
 or 
@@ -45,7 +37,7 @@ or
 
 ```
 # 首页博客名称
-logo_title: GEEK 三斤
+logo_title: geek & gamer
 
 # 默认主题风格 black or white
 style: black
@@ -60,30 +52,9 @@ menu:
   域名: /domain
   友联: /links
   关于: /about
-  Github: https://github.com/sanjinhub
-
-# valine 评论 , 使用说明见 https://valine.js.org
-# 做了域名限制，请改成自己的 KEY
-# 如不使用valine功能，将enable设为false即可
-valine:
-  enable: true
-  appId: CmCti21ooOOIzFOhEyFkFvR0-gzGzoHsz
-  appKey: FqiyUqbg7McKN2eG0MCewupf
+  Github: https://github.com/iiiypuk
 
 # 关闭 Hexo 自带代码高亮
 highlight:
-  enable: false
+  enable: true
 ```
-
-## 贡献者
-
-> 感谢所有这些优秀的贡献者们
-
-<table>
-  <tr>
-    <td align="center"><a target="_bank" href="https://github.com/sanjinhub">
-      <img src="https://avatars1.githubusercontent.com/u/53846155?s=460&v=4" width="100px;"  height="100px;" alt=""/>
-      <div><sub><b>SanJin</b></sub><div></a></td>
-    <td align="center"><a target="_bank" href="https://github.com/li-xunhuan"><img src="https://avatars2.githubusercontent.com/u/10476982?s=460&v=4" width="100px;" height="100px;"  alt=""/><div><sub><b>李寻欢</b></sub><div></a></td>
-  </tr>
-</table>
