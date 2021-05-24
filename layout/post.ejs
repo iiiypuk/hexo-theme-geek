@@ -6,6 +6,11 @@
         </p>
         <hr>
     </div>
+    <div class="post-date">
+        <p class="post-created" title="Created"><i class="far fa-calendar"></i> <%- date(page.date, 'YYYY-MM-DD') %></p>
+        &mdash;
+        <p class="post-updated" title="Updated"><i class="far fa-calendar-check"></i> <%- date(page.updated, 'YYYY-MM-DD') %></p>
+    </div>
     <div class="post-content">
         <%- page.content %>
     </div>
